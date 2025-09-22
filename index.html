@@ -12,25 +12,46 @@
   <style>
         .cajanegra {
             display: flex;
-            width: 100%;
+            justify-content: center;
+            align-items: center;
             height: 100px;
-            padding: 20px;
             border: solid 5px rgb(251, 40, 40);
             background-color: black;
         }
         .cajablanca {
             display: flex;
-            width: 100%;
+            justify-content: center;
+            align-items: center;
             height: 100px;
-            padding: 20px;
             border: solid 5px rgb(18, 21, 199);
             background-color: white;
         }
-        
+
+        /* Animación inicial para todas las piezas */
+        img {
+            max-height: 90px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animación al pasar el mouse */
+        img:hover {
+            animation: pulse 0.8s;
+        }
+
+        /* Animación infinita para dar vida */
+        .bailarina {
+            animation: bounce 2s infinite;
+        }
+
+        .parpadea {
+            animation: flash 3s infinite;
+        }
+    </style>
+</head>
      </style>
 </head>
   <body>
-     <h1 class="text-center">Ajedrez autista</h1>
+   <h1 class="text-center animate__animated animate__fadeInDown">Ajedrez autista</h1>
     <main class="container-fluid">
         <section class="row">
             <aside class="col cajanegra">
